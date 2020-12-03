@@ -4,7 +4,7 @@ using System.Text;
 
 namespace Notification.Core
 {
-    interface IUnitOfWork
+    public interface IUnitOfWork
     {
     }
 }

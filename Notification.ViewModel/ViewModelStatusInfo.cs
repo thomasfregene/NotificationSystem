@@ -2,7 +2,7 @@
 
 namespace Notification.ViewModel
 {
-    public class Class1
+    public class ViewModelStatusInfo
     {
     }
 }

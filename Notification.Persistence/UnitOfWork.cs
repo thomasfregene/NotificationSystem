@@ -4,7 +4,7 @@ using System.Text;
 
 namespace Notification.Persistence
 {
-    class UnitOfWork
+    public class UnitOfWork
     {
     }
 }

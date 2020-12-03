@@ -2,7 +2,7 @@
 
 namespace Notification.Configuration
 {
-    public class Class1
+    public class RespositoryConfiguration
     {
     }
 }

@@ -1,0 +1,9 @@
+C:\Projects\NotificationSystem\NotificationSystem\Notification.Persistence\bin\Debug\netcoreapp3.1\Notification.Persistence.deps.json
+C:\Projects\NotificationSystem\NotificationSystem\Notification.Persistence\bin\Debug\netcoreapp3.1\Notification.Persistence.dll
+C:\Projects\NotificationSystem\NotificationSystem\Notification.Persistence\bin\Debug\netcoreapp3.1\Notification.Persistence.pdb
+C:\Projects\NotificationSystem\NotificationSystem\Notification.Persistence\obj\Debug\netcoreapp3.1\Notification.Persistence.csprojAssemblyReference.cache
+C:\Projects\NotificationSystem\NotificationSystem\Notification.Persistence\obj\Debug\netcoreapp3.1\Notification.Persistence.AssemblyInfoInputs.cache
+C:\Projects\NotificationSystem\NotificationSystem\Notification.Persistence\obj\Debug\netcoreapp3.1\Notification.Persistence.AssemblyInfo.cs
+C:\Projects\NotificationSystem\NotificationSystem\Notification.Persistence\obj\Debug\netcoreapp3.1\Notification.Persistence.csproj.CoreCompileInputs.cache
+C:\Projects\NotificationSystem\NotificationSystem\Notification.Persistence\obj\Debug\netcoreapp3.1\Notification.Persistence.dll
+C:\Projects\NotificationSystem\NotificationSystem\Notification.Persistence\obj\Debug\netcoreapp3.1\Notification.Persistence.pdb

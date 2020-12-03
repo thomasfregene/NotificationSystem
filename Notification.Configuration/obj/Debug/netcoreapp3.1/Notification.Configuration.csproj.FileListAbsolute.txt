@@ -1,0 +1,9 @@
+C:\Projects\NotificationSystem\NotificationSystem\Notification.Configuration\bin\Debug\netcoreapp3.1\Notification.Configuration.deps.json
+C:\Projects\NotificationSystem\NotificationSystem\Notification.Configuration\bin\Debug\netcoreapp3.1\Notification.Configuration.dll
+C:\Projects\NotificationSystem\NotificationSystem\Notification.Configuration\bin\Debug\netcoreapp3.1\Notification.Configuration.pdb
+C:\Projects\NotificationSystem\NotificationSystem\Notification.Configuration\obj\Debug\netcoreapp3.1\Notification.Configuration.csprojAssemblyReference.cache
+C:\Projects\NotificationSystem\NotificationSystem\Notification.Configuration\obj\Debug\netcoreapp3.1\Notification.Configuration.AssemblyInfoInputs.cache
+C:\Projects\NotificationSystem\NotificationSystem\Notification.Configuration\obj\Debug\netcoreapp3.1\Notification.Configuration.AssemblyInfo.cs
+C:\Projects\NotificationSystem\NotificationSystem\Notification.Configuration\obj\Debug\netcoreapp3.1\Notification.Configuration.csproj.CoreCompileInputs.cache
+C:\Projects\NotificationSystem\NotificationSystem\Notification.Configuration\obj\Debug\netcoreapp3.1\Notification.Configuration.dll
+C:\Projects\NotificationSystem\NotificationSystem\Notification.Configuration\obj\Debug\netcoreapp3.1\Notification.Configuration.pdb

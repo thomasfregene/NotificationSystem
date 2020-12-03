@@ -4,7 +4,7 @@ using System.Text;
 
 namespace Notification.Configuration.CustomConfiguration
 {
-    class MappingProfile
+    public class MappingProfile
     {
     }
 }
