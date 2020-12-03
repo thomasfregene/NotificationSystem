@@ -15,6 +15,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Notification.Service", "Not
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Notification.ViewModel", "Notification.ViewModel\Notification.ViewModel.csproj", "{A64FCC2C-82DC-4C76-AEDB-0E0ED2A9A0C8}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Notification.Configuration", "Notification.Configuration\Notification.Configuration.csproj", "{6C49DE9B-3673-47EB-BDA3-B3D6048AB008}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -45,6 +47,10 @@ Global
 		{A64FCC2C-82DC-4C76-AEDB-0E0ED2A9A0C8}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{A64FCC2C-82DC-4C76-AEDB-0E0ED2A9A0C8}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{A64FCC2C-82DC-4C76-AEDB-0E0ED2A9A0C8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6C49DE9B-3673-47EB-BDA3-B3D6048AB008}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6C49DE9B-3673-47EB-BDA3-B3D6048AB008}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6C49DE9B-3673-47EB-BDA3-B3D6048AB008}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6C49DE9B-3673-47EB-BDA3-B3D6048AB008}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
