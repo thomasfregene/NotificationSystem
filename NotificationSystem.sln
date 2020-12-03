@@ -11,6 +11,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Notification.Data", "Notifi
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Notification.Persistence", "Notification.Persistence\Notification.Persistence.csproj", "{54DEB3A4-717F-4215-ABE6-6475906680C1}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Notification.Service", "Notification.Service\Notification.Service.csproj", "{2B9058CD-E969-4DFA-BE9D-AA4388DBFA0B}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -33,6 +35,10 @@ Global
 		{54DEB3A4-717F-4215-ABE6-6475906680C1}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{54DEB3A4-717F-4215-ABE6-6475906680C1}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{54DEB3A4-717F-4215-ABE6-6475906680C1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2B9058CD-E969-4DFA-BE9D-AA4388DBFA0B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2B9058CD-E969-4DFA-BE9D-AA4388DBFA0B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2B9058CD-E969-4DFA-BE9D-AA4388DBFA0B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2B9058CD-E969-4DFA-BE9D-AA4388DBFA0B}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
