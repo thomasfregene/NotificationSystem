@@ -4,10 +4,10 @@ using System.Text;
 
 namespace Notification.Core.Entities
 {
-    public class NotificationEmailAlert
+    public class NotificationSMSAlert
     {
         public long Id { get; set; }
-        public string Email { get; set; }
+        public string MobileNo { get; set; }
         public string Subject { get; set; }
         public string Message { get; set; }
         public string ReceiverName { get; set; }
@@ -19,6 +19,5 @@ namespace Notification.Core.Entities
         public string Reason { get; set; }
         public string CreatedBy { get; set; }
         public int Sendtries { get; set; }
-
     }
 }
