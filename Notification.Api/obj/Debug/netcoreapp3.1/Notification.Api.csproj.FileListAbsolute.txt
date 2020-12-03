@@ -38,3 +38,4 @@ C:\Projects\NotificationSystem\NotificationSystem\Notification.Api\obj\Debug\net
 C:\Projects\NotificationSystem\NotificationSystem\Notification.Api\obj\Debug\netcoreapp3.1\Razor\Views\NotificationType\Index.cshtml.g.cs
 C:\Projects\NotificationSystem\NotificationSystem\Notification.Api\obj\Debug\netcoreapp3.1\Razor\Views\NotificationChannel\Index.cshtml.g.cs
 C:\Projects\NotificationSystem\NotificationSystem\Notification.Api\obj\Debug\netcoreapp3.1\Razor\Views\NotificationTemplate\Index.cshtml.g.cs
+C:\Projects\NotificationSystem\NotificationSystem\Notification.Api\obj\Debug\netcoreapp3.1\Razor\Views\NotificationEmailAlert\Index.cshtml.g.cs
