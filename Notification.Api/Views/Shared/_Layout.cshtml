@@ -3,7 +3,7 @@
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>@ViewData["Title"] - Notification.Api</title>
+    <title>@ViewData["Title"] - Notification-System</title>
     <link href="css/app.css" rel="stylesheet">
 </head>
 <body>
@@ -35,7 +35,7 @@
                             <i class="align-middle" data-feather="check-circle"></i> <span class="align-middle">Notification</span>
                         </a>
                         <ul id="forms" class="sidebar-dropdown list-unstyled collapse " data-parent="#sidebar">
-                            <li class="sidebar-item"><a class="sidebar-link" href="forms-layouts.html">Notification Type</a></li>
+                            <li class="sidebar-item"><a class="sidebar-link" asp-controller="NotificationType" asp-action="Index">Notification Type</a></li>
                             <li class="sidebar-item"><a class="sidebar-link" href="forms-layouts.html">Notification Channel</a></li>
                             <li class="sidebar-item"><a class="sidebar-link" href="forms-layouts.html">Notification Template</a></li>
                             <li class="sidebar-item"><a class="sidebar-link" href="forms-layouts.html">Email Notification </a></li>
