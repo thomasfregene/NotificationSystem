@@ -12,5 +12,15 @@ namespace Notification.Api.Controllers
         {
             return View();
         }
+
+        public IActionResult GetById(int id)
+        {
+            return View();
+        }
+
+        public IActionResult Add()
+        {
+            return View();
+        }
     }
 }
