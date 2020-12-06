@@ -114,3 +114,6 @@ C:\Projects\NotificationSystem\NotificationSystem\Notification.Api\bin\Debug\net
 C:\Projects\NotificationSystem\NotificationSystem\Notification.Api\bin\Debug\netcoreapp3.1\zh-Hans\Microsoft.CodeAnalysis.Workspaces.resources.dll
 C:\Projects\NotificationSystem\NotificationSystem\Notification.Api\bin\Debug\netcoreapp3.1\zh-Hant\Microsoft.CodeAnalysis.Workspaces.resources.dll
 C:\Projects\NotificationSystem\NotificationSystem\Notification.Api\obj\Debug\netcoreapp3.1\Razor\Views\NotificationChannel\Post.cshtml.g.cs
+C:\Projects\NotificationSystem\NotificationSystem\Notification.Api\bin\Debug\netcoreapp3.1\Notification.ViewModel.dll
+C:\Projects\NotificationSystem\NotificationSystem\Notification.Api\bin\Debug\netcoreapp3.1\Notification.ViewModel.pdb
+C:\Projects\NotificationSystem\NotificationSystem\Notification.Api\obj\Debug\netcoreapp3.1\Razor\Views\NotificationTemplate\Post.cshtml.g.cs

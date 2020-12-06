@@ -4,7 +4,7 @@ using System.Text;
 
 namespace Notification.ViewModel.ViewModels
 {
-    class NotificationChannelVM
+    public class NotificationChannelVM
     {
     }
 }

@@ -1797,6 +1797,16 @@
         "runtime": {
           "lib/netstandard1.3/System.Xml.XDocument.dll": {}
         }
+      },
+      "Notification.ViewModel/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v3.1",
+        "compile": {
+          "bin/placeholder/Notification.ViewModel.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Notification.ViewModel.dll": {}
+        }
       }
     }
   },
@@ -6061,11 +6071,17 @@
         "system.xml.xdocument.4.3.0.nupkg.sha512",
         "system.xml.xdocument.nuspec"
       ]
+    },
+    "Notification.ViewModel/1.0.0": {
+      "type": "project",
+      "path": "../Notification.ViewModel/Notification.ViewModel.csproj",
+      "msbuildProject": "../Notification.ViewModel/Notification.ViewModel.csproj"
     }
   },
   "projectFileDependencyGroups": {
     ".NETCoreApp,Version=v3.1": [
-      "Microsoft.VisualStudio.Web.CodeGeneration.Design >= 3.1.4"
+      "Microsoft.VisualStudio.Web.CodeGeneration.Design >= 3.1.4",
+      "Notification.ViewModel >= 1.0.0"
     ]
   },
   "packageFolders": {
@@ -6093,7 +6109,11 @@
       },
       "frameworks": {
         "netcoreapp3.1": {
-          "projectReferences": {}
+          "projectReferences": {
+            "C:\\Projects\\NotificationSystem\\NotificationSystem\\Notification.ViewModel\\Notification.ViewModel.csproj": {
+              "projectPath": "C:\\Projects\\NotificationSystem\\NotificationSystem\\Notification.ViewModel\\Notification.ViewModel.csproj"
+            }
+          }
         }
       },
       "warningProperties": {
