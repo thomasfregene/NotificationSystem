@@ -1,0 +1,37 @@
+﻿@{
+    ViewData["Title"] = "Post";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<div class="container-fluid p-0">
+
+    <h1 class="mb-3 ml-2 text-primary" style="font-size:20px; font-weight:bold;">Create Notification Channel</h1>
+
+    <div class="row">
+        <div class="col-12 col-xl-12">
+            <div class="card">
+                <div class="card-body">
+                    <form>
+                        <div class="mb-3 row">
+                            <label class="col-form-label col-sm-2 text-sm-right">Name</label>
+                            <div class="col-sm-6">
+                                <input type="text" class="form-control" placeholder="Name">
+                            </div>
+                        </div>
+                        <div class="mb-3 row">
+                            <label class="col-form-label col-sm-2 text-sm-right">Description</label>
+                            <div class="col-sm-6">
+                                <textarea class="form-control" placeholder="Textarea" rows="5"></textarea>
+                            </div>
+                        </div>
+                        <div class="mb-3 row">
+                            <div class="col-sm-10 ml-sm-auto">
+                                <button type="submit" class="btn btn-primary">Submit</button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

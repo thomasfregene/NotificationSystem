@@ -4,7 +4,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>@ViewData["Title"] - Notification-System</title>
-    <link href="css/app.css" rel="stylesheet">
+    <link href="~/css/app.css" rel="stylesheet">
 </head>
 <body>
 
@@ -223,7 +223,12 @@
                     </ul>
                 </div>
             </nav>
-            @RenderBody()
+            <main class="content">
+                <div class="container-fluid">
+                    @RenderBody()
+                </div>
+            </main>
+                
             <footer class="footer">
                 <div class="container-fluid">
                     <div class="row text-muted">
@@ -255,7 +260,7 @@
 
 
     </div>
-    <script src="js/app.js"></script>
+    <script src="~/js/app.js"></script>
     @RenderSection("Scripts", required: false)
 </body>
 </html>
