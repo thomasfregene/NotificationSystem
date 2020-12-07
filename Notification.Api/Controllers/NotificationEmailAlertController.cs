@@ -18,7 +18,8 @@ namespace Notification.Api.Controllers
             return View();
         }
 
-        public IActionResult Add()
+        [HttpGet]
+        public IActionResult Post()
         {
             return View();
         }
