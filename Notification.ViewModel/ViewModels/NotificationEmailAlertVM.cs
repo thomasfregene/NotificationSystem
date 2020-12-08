@@ -1,20 +1,15 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.ComponentModel.DataAnnotations;
 using System.Text;
 
-namespace Notification.Core.Entities
+namespace Notification.ViewModel.ViewModels
 {
-    public class NotificationEmailAlert
+    class NotificationEmailAlertVM
     {
         public long Id { get; set; }
-        [Required]
         public string Email { get; set; }
-        [Required]
         public string Subject { get; set; }
-        [Required]
         public string Message { get; set; }
-        [Required]
         public string ReceiverName { get; set; }
         //public enum UserType { get; set; }
         public DateTime DateCreated { get; set; }
@@ -24,6 +19,5 @@ namespace Notification.Core.Entities
         public string Reason { get; set; }
         public string CreatedBy { get; set; }
         public int Sendtries { get; set; }
-
     }
 }
