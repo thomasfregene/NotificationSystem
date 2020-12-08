@@ -1798,9 +1798,22 @@
           "lib/netstandard1.3/System.Xml.XDocument.dll": {}
         }
       },
+      "Notification.Core/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v3.1",
+        "compile": {
+          "bin/placeholder/Notification.Core.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Notification.Core.dll": {}
+        }
+      },
       "Notification.ViewModel/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v3.1",
+        "dependencies": {
+          "Notification.Core": "1.0.0"
+        },
         "compile": {
           "bin/placeholder/Notification.ViewModel.dll": {}
         },
@@ -6071,6 +6084,11 @@
         "system.xml.xdocument.4.3.0.nupkg.sha512",
         "system.xml.xdocument.nuspec"
       ]
+    },
+    "Notification.Core/1.0.0": {
+      "type": "project",
+      "path": "../Notification.Core/Notification.Core.csproj",
+      "msbuildProject": "../Notification.Core/Notification.Core.csproj"
     },
     "Notification.ViewModel/1.0.0": {
       "type": "project",

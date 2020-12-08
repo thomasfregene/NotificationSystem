@@ -1,16 +1,14 @@
-﻿using System;
+﻿using Notification.Core.Entities;
+using System;
 using System.Collections.Generic;
-using System.ComponentModel.DataAnnotations;
 using System.Text;
 
-namespace Notification.Core.Entities
+namespace Notification.ViewModel.ViewModels
 {
-    public class NotificationTemplate
+    public class NotificationTemplateVM
     {
         public int Id { get; set; }
-        [Required]
         public string Name { get; set; }
-        [Required]
         public string Description { get; set; }
         public int NotificationTypeId { get; set; }
         public NotificationType NotificationType { get; set; }

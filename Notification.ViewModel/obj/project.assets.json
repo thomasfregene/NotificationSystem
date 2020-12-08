@@ -1,11 +1,30 @@
 {
   "version": 3,
   "targets": {
-    ".NETCoreApp,Version=v3.1": {}
+    ".NETCoreApp,Version=v3.1": {
+      "Notification.Core/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v3.1",
+        "compile": {
+          "bin/placeholder/Notification.Core.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Notification.Core.dll": {}
+        }
+      }
+    }
   },
-  "libraries": {},
+  "libraries": {
+    "Notification.Core/1.0.0": {
+      "type": "project",
+      "path": "../Notification.Core/Notification.Core.csproj",
+      "msbuildProject": "../Notification.Core/Notification.Core.csproj"
+    }
+  },
   "projectFileDependencyGroups": {
-    ".NETCoreApp,Version=v3.1": []
+    ".NETCoreApp,Version=v3.1": [
+      "Notification.Core >= 1.0.0"
+    ]
   },
   "packageFolders": {
     "C:\\Users\\fregene thomas\\.nuget\\packages\\": {}
@@ -32,7 +51,11 @@
       },
       "frameworks": {
         "netcoreapp3.1": {
-          "projectReferences": {}
+          "projectReferences": {
+            "C:\\Projects\\NotificationSystem\\NotificationSystem\\Notification.Core\\Notification.Core.csproj": {
+              "projectPath": "C:\\Projects\\NotificationSystem\\NotificationSystem\\Notification.Core\\Notification.Core.csproj"
+            }
+          }
         }
       },
       "warningProperties": {
