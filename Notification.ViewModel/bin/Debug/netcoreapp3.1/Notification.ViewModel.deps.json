@@ -7,14 +7,27 @@
   "targets": {
     ".NETCoreApp,Version=v3.1": {
       "Notification.ViewModel/1.0.0": {
+        "dependencies": {
+          "Notification.Core": "1.0.0"
+        },
         "runtime": {
           "Notification.ViewModel.dll": {}
+        }
+      },
+      "Notification.Core/1.0.0": {
+        "runtime": {
+          "Notification.Core.dll": {}
         }
       }
     }
   },
   "libraries": {
     "Notification.ViewModel/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Notification.Core/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""

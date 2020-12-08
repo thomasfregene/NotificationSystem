@@ -7,3 +7,6 @@ C:\Projects\NotificationSystem\NotificationSystem\Notification.ViewModel\obj\Deb
 C:\Projects\NotificationSystem\NotificationSystem\Notification.ViewModel\obj\Debug\netcoreapp3.1\Notification.ViewModel.csproj.CoreCompileInputs.cache
 C:\Projects\NotificationSystem\NotificationSystem\Notification.ViewModel\obj\Debug\netcoreapp3.1\Notification.ViewModel.dll
 C:\Projects\NotificationSystem\NotificationSystem\Notification.ViewModel\obj\Debug\netcoreapp3.1\Notification.ViewModel.pdb
+C:\Projects\NotificationSystem\NotificationSystem\Notification.ViewModel\bin\Debug\netcoreapp3.1\Notification.Core.dll
+C:\Projects\NotificationSystem\NotificationSystem\Notification.ViewModel\bin\Debug\netcoreapp3.1\Notification.Core.pdb
+C:\Projects\NotificationSystem\NotificationSystem\Notification.ViewModel\obj\Debug\netcoreapp3.1\Notification.ViewModel.csproj.CopyComplete

@@ -120,3 +120,5 @@ C:\Projects\NotificationSystem\NotificationSystem\Notification.Api\obj\Debug\net
 C:\Projects\NotificationSystem\NotificationSystem\Notification.Api\obj\Debug\netcoreapp3.1\Razor\Views\NotificationEmailAlert\Post.cshtml.g.cs
 C:\Projects\NotificationSystem\NotificationSystem\Notification.Api\obj\Debug\netcoreapp3.1\Razor\Views\NotificationSMSAlert\Post.cshtml.g.cs
 C:\Projects\NotificationSystem\NotificationSystem\Notification.Api\obj\Debug\netcoreapp3.1\Razor\Views\NotificationType\Post.cshtml.g.cs
+C:\Projects\NotificationSystem\NotificationSystem\Notification.Api\bin\Debug\netcoreapp3.1\Notification.Core.dll
+C:\Projects\NotificationSystem\NotificationSystem\Notification.Api\bin\Debug\netcoreapp3.1\Notification.Core.pdb
