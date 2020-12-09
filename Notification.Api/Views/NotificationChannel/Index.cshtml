@@ -21,43 +21,7 @@
                     <a class="btn btn-primary" asp-controller="NotificationChannel" asp-action="Post">Add Notification Channel</a>
                     <br />
                 </div>
-                @*<table class="table table-striped">
-                        <thead>
-                            <tr>
-                                <th>Name</th>
-                                <th>Description</th>
-                                <th>Actions</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <tr>
-                                <td>Jet Li</td>
-                                <td>lorem ipson the description of the email notification is displayed</td>
-                                <td class="table-action">
-                                    <a href="#"><i class="align-middle" style="color:blue" data-feather="edit-2"></i></a>
-                                    <a href="#"><i class="align-middle" style="color:red" data-feather="trash"></i></a>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td>Mohammed Ali</td>
-                                <td>lorem ipson the description of the email notification is displayed</td>
-                                <td class="table-action">
-                                    <a href="#"><i class="align-middle" style="color:blue" data-feather="edit-2"></i></a>
-                                    <a href="#"><i class="align-middle" style="color:red" data-feather="trash"></i></a>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td>Bruce Lee</td>
-                                <td>lorem ipson the description of the email notification is displayed</td>
-                                <td class="table-action">
-                                    <a href="#"><i class="align-middle" style="color:blue" data-feather="edit-2"></i></a>
-                                    <a href="#"><i class="align-middle" style="color:red" data-feather="trash"></i></a>
-                                </td>
-                            </tr>
-                        </tbody>
-                    </table>*@
-
-                <table id="tblNotificationChannel" class="table table-striped table-bordered">
+                <table id="tblNotificationChannel" class="table table-striped">
                     <thead>
                         <tr>
                             <th>Name</th>
@@ -67,7 +31,7 @@
                     </thead>
                     <tbody>
                         <tr>
-                            <td>Jackie Chan</td>
+                            <td>Jet Li</td>
                             <td>lorem ipson the description of the email notification is displayed</td>
                             <td class="table-action">
                                 <a href="#"><i class="align-middle" style="color:blue" data-feather="edit-2"></i></a>
@@ -75,11 +39,15 @@
                             </td>
                         </tr>
                         <tr>
-                            <td>Toby Maguire</td>
+                            <td>Mohammed Ali</td>
                             <td>lorem ipson the description of the email notification is displayed</td>
+                            <td class="table-action">
+                                <a href="#"><i class="align-middle" style="color:blue" data-feather="edit-2"></i></a>
+                                <a href="#"><i class="align-middle" style="color:red" data-feather="trash"></i></a>
+                            </td>
                         </tr>
                         <tr>
-                            <td>Hashirama Senju</td>
+                            <td>Bruce Lee</td>
                             <td>lorem ipson the description of the email notification is displayed</td>
                             <td class="table-action">
                                 <a href="#"><i class="align-middle" style="color:blue" data-feather="edit-2"></i></a>
@@ -88,6 +56,38 @@
                         </tr>
                     </tbody>
                 </table>
+
+                @*<table id="tblNotificationChannel" class="table table-striped table-bordered">
+                        <thead>
+                            <tr>
+                                <th>Name</th>
+                                <th>Description</th>
+                                <th>Actions</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Jackie Chan</td>
+                                <td>lorem ipson the description of the email notification is displayed</td>
+                                <td class="table-action">
+                                    <a href="#"><i class="align-middle" style="color:blue" data-feather="edit-2"></i></a>
+                                    <a href="#"><i class="align-middle" style="color:red" data-feather="trash"></i></a>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>Toby Maguire</td>
+                                <td>lorem ipson the description of the email notification is displayed</td>
+                            </tr>
+                            <tr>
+                                <td>Hashirama Senju</td>
+                                <td>lorem ipson the description of the email notification is displayed</td>
+                                <td class="table-action">
+                                    <a href="#"><i class="align-middle" style="color:blue" data-feather="edit-2"></i></a>
+                                    <a href="#"><i class="align-middle" style="color:red" data-feather="trash"></i></a>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>*@
 
             </div>
         </div>
@@ -99,21 +99,6 @@
 
 <script type="text/javascript">
     $(document).ready(function () {
-        $('#tblNotificationChannel').DataTable({
-            ajax: {
-                url: '/NotificationChannelController',
-                dataSrc: 'data'
-            },
-            columns: [
-                { data: 'Name' },
-                { data: 'Description' },
-                {
-                    data: 'Id',
-                    render: function (data, type, notificationType, meta) {
-                        return "<a href='/NotificationType/edit/" + notificationType.id + "'></a>";
-                    }
-                }
-            ]
-        });
+        $('#tblNotificationChannel').DataTable()
     });
 </script>
