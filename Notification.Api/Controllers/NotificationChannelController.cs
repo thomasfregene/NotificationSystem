@@ -11,11 +11,8 @@ namespace Notification.Api.Controllers
     {
         public IActionResult Index()
         {
-            var notificationChannel = new List<NotificationChannelVM>()
-            {
-                new NotificationChannelVM{Id=1, Name="Tim", Description="text message"}
-            };
-            return View(notificationChannel);
+          
+            return View();
         }
 
         public IActionResult GetById(int id)

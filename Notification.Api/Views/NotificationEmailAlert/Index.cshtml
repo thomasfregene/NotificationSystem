@@ -19,7 +19,7 @@
                     <a class="btn btn-primary" asp-controller="NotificationEmailAlert" asp-action="Post">Add Email Notification</a>
                     <br />
                 </div>
-                <table class="table table-striped">
+                <table id="tblNotificationEmailAlert" class="table table-striped">
                     <thead>
                         <tr>
                             <th>Email</th>
@@ -73,6 +73,6 @@
 
 <script type="text/javascript">
     $(document).ready(function () {
-        $('#tblNotificationChannel').DataTable()
+        $('#tblNotificationEmailAlert').DataTable()
     });
 </script>
