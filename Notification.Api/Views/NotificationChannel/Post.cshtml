@@ -9,17 +9,17 @@
         <div class="card-header">
         </div>
         <div class="card-body">
-            <form>
-                <div class="mb-3 row">
+            <form id="form">
+                <div class="mb-3 row form-validate">
                     <label class="col-form-label col-sm-2 text-sm-right">Name</label>
                     <div class="col-sm-10">
-                        <input type="text" class="form-control" placeholder="Full Name">
+                        <input type="text" class="form-control" placeholder="Full Name" id="name">
                     </div>
                 </div>
                 <div class="mb-3 row">
                     <label class="col-form-label col-sm-2 text-sm-right">Description</label>
                     <div class="col-sm-10">
-                        <textarea class="form-control" placeholder="Description" rows="3"></textarea>
+                        <textarea class="form-control" placeholder="Description" rows="3" id="description"></textarea>
                     </div>
                 </div>
                 <div class="mb-3 row">
@@ -31,6 +31,61 @@
         </div>
     </div>
 </div>
+
+<script>
+    const form = document.getElementById('form');
+    const name = document.getElementById('name');
+    const description = document.getElementById('description');
+
+    form.addEventListener('submit', (e) => {
+        e.preventDefault();
+        //custom function for checking valid input
+        checkInput();
+    });
+
+    function checkInput() {
+        //get value from input
+        const nameValue = name.nodeValue.trim();
+        const descriptionValue = description.nodeValue.trim();
+
+        if (nameValue === '') {
+            //show error
+            //add error class
+            setErrorFor(name, 'name cannot be blank');
+        } else {
+            //success class
+            setSuccessFor(name);
+        }
+
+        if (descriptionValue === '') {
+            //show error
+            //add error class
+            setErrorFor(description, 'description cannot be blank');
+        } else {
+            //success class
+            setSuccessFor(description);
+        }
+    }
+
+    function setErrorFor(input, message) {
+        const formValidate = input.parentElement;
+        const small = formValidate.querySelector('small');
+
+        //add error message inside small
+        small.innerText = message
+
+        //add error class
+        formValidate.className = 'form-validate error';
+    }
+
+    function setSuccessFor(input) {
+        const formValidate = input.parentElement;
+
+        formValidate.className = 'form-validate success';
+    }
+</script>
+
+
 
 
 
