@@ -3,44 +3,111 @@
     Layout = "~/Views/Shared/_Layout.cshtml";
 }
 
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" />
+<style>
+    label {
+        padding-bottom: 20px;
+    }
+
+    i {
+        position: absolute;
+        visibility: hidden;
+    }
+
+    .success input {
+        border-color: #2ecc71;
+    }
+
+    .error textarea {
+        border-color: #e74e3c;
+    }
+
+    .success textarea {
+        border-color: #2ecc71;
+    }
+
+    .error input {
+        border-color: #e74e3c;
+    }
+
+    small {
+        margin-left: 20px;
+        visibility: hidden;
+    }
+
+    .success i.fa-check-circle {
+        color: #2ecc71;
+        visibility: visible;
+        margin-top: 6px
+    }
+
+    .error i.fa-exclamation-circle {
+        color: #e74e3c;
+        visibility: visible;
+        margin-top: 6px
+    }
+
+    .error small {
+        color: #e74e3c;
+        visibility: visible;
+    }
+
+    .success small {
+        color: #2ecc71;
+        visibility: visible;
+    }
+</style>
+
 <div class="col-12 col-xl-12">
     <h2 class="card-title mb-3"><span style="font-size: 20px;"><strong>Add Notification Template</strong></span></h2>
     <div class="card">
         <div class="card-header">
         </div>
         <div class="card-body">
-            <form>
+            <form id="form">
                 <div class="mb-3 row">
                     <label class="col-form-label col-sm-2 text-sm-right">Name</label>
                     <div class="col-sm-10">
                         <input type="text" class="form-control" placeholder="Full Name" id="name">
+                        <i class="fas fa-check-circle"></i>
+                        <i class="fas fa-exclamation-circle"></i>
+                        <small>Error Message</small>
                     </div>
                 </div>
                 <div class="mb-3 row">
                     <label class="col-form-label col-sm-2 text-sm-right">Description</label>
                     <div class="col-sm-10">
                         <textarea class="form-control" placeholder="Description" rows="3" id="description"></textarea>
+                        <i class="fas fa-check-circle"></i>
+                        <i class="fas fa-exclamation-circle"></i>
+                        <small>Error Message</small>
                     </div>
                 </div>
                 <div class="mb-3 row">
                     <label class="col-form-label col-sm-2 text-sm-right">Notification Type</label>
                     <div class="col-sm-10">
-                        <select type="text" class="form-control" placeholder="Notification Type">
+                        <select type="text" class="form-control" placeholder="Notification Type" id="notifType">
                             <option>Select Notification Type</option>
                             <option>Welcome Message</option>
                             <option>Application Submission</option>
                             <option>Application Approval</option>
                         </select>
+                        <i class="fas fa-check-circle"></i>
+                        <i class="fas fa-exclamation-circle"></i>
+                        <small>Error Message</small>
                     </div>
                 </div>
                 <div class="mb-3 row">
                     <label class="col-form-label col-sm-2 text-sm-right">Notification Channel</label>
                     <div class="col-sm-10">
-                        <select type="text" class="form-control" placeholder="Notification Channel">
+                        <select type="text" class="form-control" placeholder="Notification Channel" id="notifChannel">
                             <option>Select Notification Channel</option>
                             <option>Email Channel</option>
                             <option>SMS Channel</option>
                         </select>
+                        <i class="fas fa-check-circle"></i>
+                        <i class="fas fa-exclamation-circle"></i>
+                        <small>Error Message</small>
                     </div>
                 </div>
                 <div class="mb-3 row">
@@ -56,6 +123,8 @@
 <script>
     const form = document.getElementById('form');
     const name = document.getElementById('name');
+    const notifType = document.getElementById('notifType');
+    const notifChannel = document.getElementById('notifChannel');
     const description = document.getElementById('description');
 
     form.addEventListener('submit', (e) => {
@@ -67,6 +136,8 @@
     function checkInput() {
         //get value from input
         const nameValue = name.value.trim();
+        const notifTypeValue = notifType.value.trim();
+        const notifChannelValue = notifChannel.value.trim();
         const descriptionValue = description.value.trim();
 
         if (nameValue === '') {
@@ -75,7 +146,23 @@
             setErrorFor(name, 'name cannot be blank');
         } else {
             //success class
-            setSuccessFor(name);
+            setSuccessFor(name, 'Input Is Valid');
+        }
+
+        if (notifTypeValue == "Select Notification Type") {
+            //show error and add erro class
+            setErrorFor(notifType, "Input Field Cannot Be Blank");
+        } else {
+            //show the success class
+            setSuccessFor(notifType, "Input Is Valid");
+        }
+
+        if (notifChannelValue == "Select Notification Channel") {
+            //show error and add erro class
+            setErrorFor(notifChannel, "Input Field Cannot Be Blank");
+        } else {
+            //show the success class
+            setSuccessFor(notifChannel, "Input Is Valid");
         }
 
         if (descriptionValue === '') {
@@ -84,7 +171,7 @@
             setErrorFor(description, 'description cannot be blank');
         } else {
             //success class
-            setSuccessFor(description);
+            setSuccessFor(description, 'Input Is Valid');
         }
     }
 
@@ -97,13 +184,15 @@
         small.innerText = message
 
         //add error class
-        grandParent.className = 'form-validate error';
+        grandParent.className = "mb-3 row error";
     }
 
-    function setSuccessFor(input) {
+    function setSuccessFor(input, message) {
         const formControl = input.parentElement;
         const grandParent = formControl.parentElement
         const small = formControl.querySelector('small');
+
+        small.innerText = message
 
         grandParent.className = 'mb-3 row success';
     }
