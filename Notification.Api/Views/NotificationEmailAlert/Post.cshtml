@@ -3,6 +3,62 @@
     Layout = "~/Views/Shared/_Layout.cshtml";
 }
 
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" />
+<style>
+    label {
+        padding-bottom: 20px;
+    }
+
+    i {
+        position: absolute;
+        visibility: hidden;
+    }
+
+    .success input {
+        border-color: #2ecc71;
+    }
+
+    .success textarea {
+        border-color: #2ecc71;
+    }
+
+    .error textarea {
+        border-color: #e74e3c;
+    }
+
+    .error input {
+        border-color: #e74e3c;
+    }
+
+    small {
+        margin-left: 20px;
+        visibility: hidden;
+    }
+
+    .success i.fa-check-circle {
+        color: #2ecc71;
+        visibility: visible;
+        margin-top: 6px
+    }
+
+    .error i.fa-exclamation-circle {
+        color: #e74e3c;
+        visibility: visible;
+        margin-top: 6px
+    }
+
+    .error small {
+        color: #e74e3c;
+        visibility: visible;
+    }
+
+    .success small {
+        color: #2ecc71;
+        visibility: visible;
+    }
+</style>
+
 <div class="col-12 col-xl-12">
     <h2 class="card-title mb-3"><span style="font-size: 20px;"><strong>Add Email Notification</strong></span></h2>
     <div class="card">
@@ -14,24 +70,36 @@
                     <label class="col-form-label col-sm-2 text-sm-right">Email</label>
                     <div class="col-sm-10">
                         <input type="email" class="form-control" placeholder="Email" id="email">
+                        <i class="fas fa-check-circle"></i>
+                        <i class="fas fa-exclamation-circle"></i>
+                        <small>Error Message</small>
                     </div>
                 </div>
                 <div class="mb-3 row">
                     <label class="col-form-label col-sm-2 text-sm-right">Subject</label>
                     <div class="col-sm-10">
                         <input type="text" class="form-control" placeholder="Email Subject" id="subject">
+                        <i class="fas fa-check-circle"></i>
+                        <i class="fas fa-exclamation-circle"></i>
+                        <small>Error Message</small>
                     </div>
                 </div>
                 <div class="mb-3 row">
                     <label class="col-form-label col-sm-2 text-sm-right">Message</label>
                     <div class="col-sm-10">
                         <textarea class="form-control" placeholder="Message" rows="3" id="message"></textarea>
+                        <i class="fas fa-check-circle"></i>
+                        <i class="fas fa-exclamation-circle"></i>
+                        <small>Error Message</small>
                     </div>
                 </div>
                 <div class="mb-3 row">
                     <label class="col-form-label col-sm-2 text-sm-right">Receiver's Name</label>
                     <div class="col-sm-10">
                         <input type="text" class="form-control" placeholder="Receiver's Name" id="receiverName">
+                        <i class="fas fa-check-circle"></i>
+                        <i class="fas fa-exclamation-circle"></i>
+                        <small>Error Message</small>
                     </div>
                 </div>
                 <div class="mb-3 row">
@@ -70,7 +138,7 @@
             setErrorFor(email, 'email cannot be blank');
         } else {
             //success class
-            setSuccessFor(email);
+            setSuccessFor(email, 'Input is valid');
         }
 
         if (subjectValue === '') {
@@ -79,7 +147,7 @@
             setErrorFor(subject, 'subject cannot be blank');
         } else {
             //success class
-            setSuccessFor(subject);
+            setSuccessFor(subject, 'Input is valid');
         }
 
         if (messageValue === '') {
@@ -88,7 +156,7 @@
             setErrorFor(message, 'message cannot be blank');
         } else {
             //success class
-            setSuccessFor(message);
+            setSuccessFor(message, 'Input is valid');
         }
 
         if (receiverNameValue === '') {
@@ -97,7 +165,7 @@
             setErrorFor(receiverName, 'receiverName cannot be blank');
         } else {
             //success class
-            setSuccessFor(receiverName);
+            setSuccessFor(receiverName, 'Input is valid');
         }
     }
 
@@ -111,12 +179,15 @@
         small.innerText = message
 
         //add error class
-        formValidate.className = 'form-validate error';
+        grandParent.className = "mb-3 row error";
     }
 
-    function setSuccessFor(input) {
+    function setSuccessFor(input, message) {
         const formControl = input.parentElement;
         const grandParent = formControl.parentElement
+        const small = formControl.querySelector('small');
+
+        small.innerText = message
 
         grandParent.className = 'mb-3 row success';
     }
