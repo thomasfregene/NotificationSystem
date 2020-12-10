@@ -103,8 +103,10 @@
     }
 
     function setErrorFor(input, message) {
-        const formValidate = input.parentElement;
-        const small = formValidate.querySelector('small');
+        const formControl = input.parentElement;
+        const grandParent = formControl.parentElement
+        const small = formControl.querySelector('small');
+
 
         //add error message inside small
         small.innerText = message

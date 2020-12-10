@@ -67,9 +67,11 @@
         }
     }
 
+
     function setErrorFor(input, message) {
-        const formValidate = input.parentElement;
-        const small = formValidate.querySelector('small');
+        const formControl = input.parentElement;
+        const grandParent = formControl.parentElement
+        const small = formControl.querySelector('small');
 
         //add error message inside small
         small.innerText = message
@@ -79,9 +81,10 @@
     }
 
     function setSuccessFor(input) {
-        const formValidate = input.parentElement;
+        const formControl = input.parentElement;
+        const grandParent = formControl.parentElement
 
-        formValidate.className = 'form-validate success';
+        grandParent.className = 'mb-3 row success';
     }
 </script>
 
